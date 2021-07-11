@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap');
+:root {
+    --nav-height: 80px;
+}
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+html {
+    font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+    html {
+        font-size: calc(16px + 4 * ((100vw - 320px) / 680));
+    }
+}
+@media screen and (min-width: 1000px) {
+    html {
+        font-size: 20px;
+    }
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.8em;
+}
+p {
+    font-size: 0.8rem;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Monsterrat', sans-serif;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+a {
+    cursor: pointer;
+}
+/* override browser link color */
+/* chrome */
+a:-webkit-any-link {
+    color: unset;
+}
+/* firefox */
+*:link {
+    color: inherit;
+}
+.btn-default {
+    height: 60px;
+    border-radius: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: ease-in 0.15s;
+}
+.section {
+    padding: 20px;
+    width: 100%;
+}
+.section-content {
+    margin: auto;
+    width: 80%;
+    max-width: 900px;
+}
+.section_header {
+    margin-bottom: 1em;
+}
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+/* Styling */
+/* Section Nav */
+.section-nav {
+    height: var(--nav-height);
+}
+.header-nav {
+    display: flex;
+    max-height: calc(var(--nav-height) - 40px);
+    justify-content: space-between;
+}
+.logo-container {
+    display: block;
+}
+.logo-container svg {
+    width: calc(var(--nav-height) - 40px);
+    height: calc(var(--nav-height) - 40px);
+}
+/* Hero Section */
+.sec-hero {
+    height: calc(100vh - var(--nav-height));
+}
+.sec-hero .section-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* About Me Section */
+.about-container {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    margin-bottom: 40px;
+}
+.about_img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+/* .skill-box {
+    padding: 0 20px;
+}
+.skill-box img {
+    width: 100%;
+} */
+.skill-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.skill > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.skill > img {
+    width: 1.8rem;
+    height: 1.8rem;
+    margin: 5px 5px 5px 0;
+    border-radius: 50%;
+}
+/* Work Section */
+.work-container {
+    width: 100%;
+}
+.work-box {
+    width: 30%;
+    display: inline-block;
+}
+.work-box img {
+    max-width: 100%;
+}
+/* Landscape Mobile & Portrait Tablets */
+@media screen and (min-width: 660px) {
+    .bc-3-md {
+        flex-direction: row;
+    }
+    .bc-3-md > .box {
+        width: 33%;
+    }
+}
