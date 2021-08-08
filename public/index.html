@@ -29,7 +29,11 @@
 <body>
   <script>
     function scrollAnimationHero() {
-      console.log(window.scrollY);
+      var scrollPosition = window.scrollY;
+      var docHeight = document.documentElement.clientHeight;
+      var heroScale = scrollPosition / docHeight * 6 + 1;
+      console.log(`${scrollPosition} / ${docHeight}`);
+      document.getElementById("hero_bg_1").style.transform = `scale(${heroScale},${heroScale})`;
     }
     window.addEventListener("scroll", scrollAnimationHero);
   </script>
