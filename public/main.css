@@ -106,7 +106,21 @@ a:-webkit-any-link {
     position: absolute;
     width: 100vw;
     height: 100vh;
+    z-index: -2;
+    background-image: url('assets/headerart_2.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.hero_headerart1 {
+    width: 70vmin;
+    height: 70vmin;
+    position: relative;
+    background-image: url('assets/headerart_1_noframe.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     z-index: -1;
+    margin-top: calc(-35vmin - 7rem);
+    margin-left: -4rem;
 }
 .sec-hero .section-content {
     height: 100%;
