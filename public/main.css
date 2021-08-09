@@ -160,6 +160,19 @@ a:-webkit-any-link {
 .work-box img {
     max-width: 100%;
 }
+/* Connect Section */
+.connect-item {
+    display: flex;
+    align-items: center;
+    margin: 15px 0 15px 0;
+    text-decoration: none;
+}
+.connect-icon {
+    flex-basis: 4rem;
+    flex-shrink: 2;
+    margin-right: 10px;
+    fill: #94cfe5;
+}
 /* Landscape Mobile & Portrait Tablets */
 @media screen and (min-width: 660px) {
     .bc-3-md {
