@@ -135,6 +135,10 @@ a:-webkit-any-link {
 } */
 .skill-container {
     width: 100%;
+    display: flex;
+}
+.skill-content {
+    display: flex;
 }
 .skill > * {
     display: inline-block;
